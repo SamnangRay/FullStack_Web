@@ -1,0 +1,17 @@
+h3 {
+  background-color: black;
+  color: aliceblue;
+}
+p {
+  background-color: bisque;
+  color: black;
+}
+#banana {
+  background-color: black;
+  color: aliceblue;
+}
+.text_color {
+  text-align: center;
+  background-color: blueviolet;
+  margin-top: 50px;
+}

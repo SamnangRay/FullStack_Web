@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    #delete {
+      padding: 0;
+      margin-top: 15px;
+      text-align: center;
+      height: 20px;
+    }
+  </style>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
+    <h1>To-do List with LocalStorage</h1>
+
+    <div style="border: 1px solid black">
+      <div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          "
+        >
+          <p>Task title</p>
+          <p>Assingnee</p>
+          <p>Dateline</p>
+        </div>
+        <div>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+            required
+          />
+          <input
+            type="text"
+            name="assingnee"
+            id="assingnee"
+            required
+            placeholder="John"
+          />
+          <input type="date" name="date" id="date" />
+          <button id="add">Add</button>
+        </div>
+      </div>
+      <ul
+        id="listitem"
+        style="list-style: none; align-items: center; padding: 0; margin: 5"
+      >
+        <li
+          
+        >
+          <p>Create project</p>
+          <p>Tola</p>
+          <p>24/2/2022</p>
+          <button id="delete">
+            <i class="fa-regular fa-trash-can"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <script></script>
+  </body>
+</html>

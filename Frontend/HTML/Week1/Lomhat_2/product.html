@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Products-Project</title>
+  </head>
+  <body>
+    <img
+      src="https://placehold.co/150x50/0f172a/38bdf8?text=ShopHub+Logo"
+      alt="logo"
+    />
+    <h1>Create Product Form</h1>
+    <p>
+      Practice form labels, inputs, select, textarea, placeholders, and buttons.
+    </p>
+    <ul>
+      <li><a href="./index.html">Product List</a></li>
+      <li><a href="./product.html">Create Product</a></li>
+      <li><a href="./category.html">Create Category</a></li>
+    </ul>
+    <hr />
+    <h2>Product Information</h2>
+    <form action="/submit-data" method="post">
+      <label for="productName">Product Name</label><br />
+      <input
+        type="text"
+        placeholder="Enter product name"
+        name="productName"
+      /><br /><br />
+      <label for="productCode">Product Code</label><br />
+      <input
+        type="text"
+        placeholder="Example: PRD-001"
+        name="productCode"
+      /><br /><br />
+      <label for="category">Category</label><br />
+      <select name="category">
+        Category
+        <option value="#">-- Select Category --</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+        <option value="home&living">Home & Living</option>
+        <option value="books">Books</option></select
+      ><br />
+      <br />
+      <label for="price">Price</label><br />
+      <input
+        type="number"
+        placeholder="Enter Price"
+        name="price"
+        min="0"
+        step="0.01"
+      /><br /><br />
+      <label for="stockQuantity">Stock Quantity</label><br />
+      <input type="number" placeholder="Enter stock quantity" />
+      <br /><br />
+      <label for="status">Status</label><br />
+      <select name="status">
+        Status
+        <option value="#">Available</option>
+        <option value="lowStock">Low Stock</option>
+        <option value="outofStock">Out of Stock</option></select
+      ><br /><br />
+
+      <label for="description">Description</label><br />
+      <textarea
+        name="description"
+        placeholder="Write a short product description"
+        rows="5"
+        cols="40"
+      ></textarea
+      ><br /><br />
+      <button>Save Product</button>
+      <button>Clear Form</button>
+    </form>
+
+    <h2>Browser Test Checklist</h2>
+    <ol>
+      <li>Click inside each input and type sample data.</li>
+      <li>Choose a category from the select box.</li>
+      <li>Type a product description in the textarea.</li>
+      <li>Click Clear Form and confirm all fields are reset.</li>
+      <li>
+        Click Save Product and observe the browser validation for required
+        fields.
+      </li>
+    </ol>
+    <hr />
+
+    <p>© 2026 Fullstack ITC Practice. HTML Foundation.</p>
+    <span>
+      <a href="./index.html">Product List</a> |
+      <a href="./product.html">Create Product</a> |
+      <a href="./categories.html">Create Category</a>
+    </span>
+  </body>
+</html>

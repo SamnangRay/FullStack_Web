@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .wrapper {
+      width: 600px;
+      height: 450px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .signIn {
+      background-color: whitesmoke;
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow:
+        rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(8, 107, 193);
+    }
+    .input-el {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 10px;
+    }
+    .head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="signIn">
+        <div class="head">
+          <h1>Sign In</h1>
+          <p style="margin-top: 10px; margin-bottom: 20px">
+            Enter your credentials to continue
+          </p>
+        </div>
+        <div class="input-el">
+          <input
+            style="
+              margin-bottom: 35px;
+              height: 40px;
+              border-radius: 5px;
+              border: 1px solid gray;
+              padding: 5px 10px;
+            "
+            type="text"
+            name="email"
+            id=""
+            placeholder="Email"
+          />
+
+          <input
+            style="
+              height: 40px;
+              border-radius: 5px;
+              border: 1px solid gray;
+              padding: 5px 10px;
+            "
+            type="text"
+            name="password"
+            id=""
+            placeholder="Password "
+          />
+          <i
+            style="position: absolute; right: 42%; bottom: 71%; color: grey"
+            class="fa-regular fa-eye"
+          ></i>
+        </div>
+
+        <div class="btn-el" style="margin-top: 35px">
+          <input type="checkbox" name="" />
+          <label for="text">Remember me</label>
+          <label style="margin-left: 40px" for="text"
+            ><a href="#">Forgot password?</a></label
+          >
+        </div>
+        <div
+          style="
+            background-color: rgb(8, 114, 243);
+            border-radius: 5px;
+            width: 90%;
+
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+          "
+        >
+          <span><a href="#" style="color: white">Sign In</a></span>
+        </div>
+        <div style="margin-top: 20px">
+          Don't have an account? <a href="#">Create one</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student-Name</title>
+  </head>
+  <body>
+    <h1>Student-Name:</h1>
+    <ul id="list"></ul>
+    <input
+      type="text"
+      name="students"
+      id="students"
+      placeholder="Ex: Samnang"
+    />
+
+    <button id="add">Add</button>
+    <button id="delete">Delete</button>
+
+    <script>
+      let ls = document.querySelector("#list");
+      let addList = document.querySelector("#add");
+      let deleteList = document.querySelector("#delete");
+      let input = document.querySelector("#students");
+
+      addList.addEventListener("click", () => {
+        console.log(input);
+
+        let listout = input.value;
+        ls.innerHTML += `<li>${listout}</li>`;
+        input.value = "";
+      });
+
+      deleteList.addEventListener("click", () => {
+        let listout = "";
+        ls.innerHTML = listout;
+      });
+    </script>
+  </body>
+</html>

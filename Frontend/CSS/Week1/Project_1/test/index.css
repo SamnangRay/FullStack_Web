@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f1f5f9;
+}
+.logo {
+  border-radius: 10px;
+}
+header {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.navbar {
+  display: flex;
+  margin-top: 30px;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.navA,
+.navB,
+.navC {
+  background-color: #0284c7;
+  margin-right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: bold;
+}
+.tableEl {
+  width: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  padding: 10px 50px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+table {
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px solid gray;
+  text-align: center;
+}
+th,
+td {
+  padding: 12px;
+}
+th {
+  background-color: black;
+  color: #f1f5f9;
+}
+img {
+  border: none;
+  border-radius: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #d4e0ed;
+}
+.blog {
+  background-color: #fefbea;
+  margin: 20px;
+  border: 1 solid black;
+  /* border-left: 2 solid #f49f0b; */
+  padding: 10px;
+  width: 50%;
+}

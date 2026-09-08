@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 class="title">Todo List</h1>
+    <h1 class="title">Todo List 2</h1>
+    <input type="text" id="inputData" />
+    <button id="btn">Add</button>
+    <ul id="list"></ul>
+  </body>
+
+  <script>
+    const htmlInput = document.querySelector("#inputData");
+    const htmlBtn = document.querySelector("#btn");
+    const htmlList = document.querySelector("#list");
+
+    let listData = ["HTML", "CSS", "JS"];
+
+    const render = () => {
+      let html = "";
+      for (let i = 0; i < listData.length; i++) {
+        html += `
+                <li>${listData[i]}</li>
+            `;
+      }
+      console.log(html);
+      htmlList.innerHTML = html;
+    };
+    htmlBtn.addEventListener("click", () => {
+      console.log(htmlInput.value);
+      listData.push(htmlInput.value);
+      render();
+    });
+    render();
+  </script>
+</html>

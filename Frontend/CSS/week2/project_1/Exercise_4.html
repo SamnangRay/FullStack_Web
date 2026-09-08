@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .parent {
+      border: 1px solid black;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "child1 child2";
+    }
+    .child {
+      min-height: 100px;
+    }
+    .c1 {
+      grid-area: child1;
+    }
+    .c2 {
+      grid-area: child2;
+    }
+  </style>
+  <body>
+    <header
+      style="background-color: rgb(233, 241, 247); width: 100%; height: 60px"
+    >
+      <nav
+        style="
+          width: 100%;
+          height: 100%;
+          /* border: 1px solid blue; */
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        "
+      >
+        <div style="/*border: 1px solid black;*/ width: 40%; padding: 20px">
+          <ul
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            "
+          >
+            <li>
+              <i style="color: black" class="fa-solid fa-triangle-exclamation"
+                >LOGO</i
+              >
+            </li>
+            <li>
+              <a style="color: gray" href="#">About Me</a>
+            </li>
+            <li><a style="color: gray" href="#">Projects</a></li>
+            <li><a style="color: gray" href="#">Skills</a></li>
+            <li><a style="color: gray" href="#">Certificates</a></li>
+          </ul>
+        </div>
+        <div
+          style="
+            /* border: 1px solid black; */
+            width: 40%;
+            /* height: 100%; */
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            text-align: center;
+          "
+        >
+          <a
+            style="
+              border: 1px solid black;
+              width: 80px;
+              padding: 10px;
+              margin-right: 5px;
+              background-color: white;
+              color: black;
+            "
+            href="#"
+            >Sign Up</a
+          >
+          <a
+            style="
+              color: white;
+              border: 1px solid black;
+              width: 80px;
+              padding: 10px;
+              margin-right: 5px;
+              background-color: black;
+            "
+            href="#"
+            >Login</a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="parent">
+      <div class="child c1">1</div>
+      <div class="child c2">2</div>
+    </div>
+  </body>
+</html>
